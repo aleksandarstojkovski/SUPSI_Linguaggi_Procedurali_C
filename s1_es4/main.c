@@ -5,35 +5,40 @@
 //				Serie 1 - Esercizio 4
 //
 
-int main() {
-    char numero[100];
-    int i;
-
-    printf("inserire numero: ");
-    scanf("%s", numero);
-
-    for (i=0; i<100;i++){
+void stampa_numero(char numero[], int grandezza_array){
+    for (int i=0; i<grandezza_array;i++){
         if ( numero[i] == '\0' || numero[i] == '\n'){
             break;
         }
         printf(" %c ", numero[i]);
     }
-    printf("\nil numero ha %d cifre", i);
+}
+
+int controlla_numero(char numero[], int grandezza_array) {
+    int i;
+    for (i=0; i<grandezza_array;i++){
+        if ( numero[i] == '\0' || numero[i] == '\n'){
+            break;
+        }
+    }
+    if (i==4){
+        printf("SI\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return i;
+}
+
+int main() {
+    char numero[100];
+
+    printf("inserire numero:");
+    scanf("%s", numero);
+
+    if (controlla_numero(numero,100) == 4){
+        stampa_numero(numero,100);
+    }
 
     return 0;
 }
-}
-
-//int cifreInNumero(int numero){
-//    int counter=1;
-//    if (numero<0.1){
-//        return 1;
-//    }
-//    for (double i=10.0;i<1000000;i=i*10){
-//        double test = numero/i;
-//        if (test >=0.1 && test <1){
-//            return counter;
-//        }
-//        counter++;
-//    }
-//}

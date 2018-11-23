@@ -38,7 +38,7 @@ void printStack (Stack * stack){
 }
 
 int main(){
-    Stack * stack = malloc(sizeof(stack)); // on the heap memory
+    Stack * stack = malloc(sizeof(*stack)); // on the heap memory
     Stack stack2; // on the stack memory
     initializeStack(stack);
 

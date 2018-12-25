@@ -12,10 +12,11 @@ typedef struct Stack{
 } Stack;
 
 int main (){
-    Stack * stack = malloc(sizeof(stack));
-    stack->element=4;
-    stack->length=malloc(sizeof(int));
-    *(stack->length)=3;
+    char c[] = "abcd";
+    char *C = "abcd";
+    c[1]='A';
+    C[0]='A';
 
-    printf("%d",*(stack->length));
+    printf("%s\n",c);
+    printf("%s\n",C);
 }

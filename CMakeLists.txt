@@ -10,6 +10,7 @@ add_subdirectory("s3_es3")
 add_subdirectory("dec_to_bin")
 add_subdirectory("testing")
 add_subdirectory("somma_argomenti_passati")
+add_subdirectory("s4_es1")
 
 cmake_minimum_required(VERSION 3.12)
 

@@ -34,7 +34,7 @@ int main(){
     int max_lunghezza = 0;
     int max_indice = 0;
 
-    for (int i=100000;i<100020;i++){
+    for (int i=1;i<100;i++){
         lunghezza=recursive(i);
         if (lunghezza > max_lunghezza){
             max_lunghezza = lunghezza;

@@ -6,7 +6,9 @@ add_subdirectory("s2_es1")
 add_subdirectory("s2_es1_v2")
 add_subdirectory("s3_es1")
 add_subdirectory("s3_es2")
+add_subdirectory("s3_es3")
 add_subdirectory("dec_to_bin")
+add_subdirectory("testing")
 
 cmake_minimum_required(VERSION 3.12)
 

@@ -8,7 +8,7 @@
 
 int main(){
 
-    initStack();
+    init_stack();
     printf("**** PUSHING THE ITEMS ****\n");
     for (int i=0;i<15;i++){
         push(i);

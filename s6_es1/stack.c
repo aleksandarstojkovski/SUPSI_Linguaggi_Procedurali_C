@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 static size_t init_size = 10;
-static int counter;
+static size_t counter;
 static int * values;
 static size_t incrase_size=1;
 
-void initStack(){
+void init_stack(){
     counter = 0;
     values = calloc(init_size,sizeof(int));
 }

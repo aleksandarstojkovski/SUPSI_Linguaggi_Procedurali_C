@@ -8,7 +8,7 @@
 void push(int num);
 int pop();
 int top();
-void initStack();
+void init_stack();
 void destroy_stack();
 
 #endif //STACK_H

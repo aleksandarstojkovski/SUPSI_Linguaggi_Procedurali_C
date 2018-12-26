@@ -7,6 +7,7 @@
 #include <stdlib.h>
 
 int main(){
+
     initStack();
     printf("**** PUSHING THE ITEMS ****\n");
     for (int i=0;i<15;i++){
@@ -17,5 +18,7 @@ int main(){
     for (int i=0;i<15;i++){
         pop();
     }
+
     destroy_stack();
+
 }

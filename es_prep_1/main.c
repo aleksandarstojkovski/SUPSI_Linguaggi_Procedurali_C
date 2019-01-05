@@ -16,11 +16,25 @@ void print_list(long * list) {
 		printf("%ld\n", list[i]);
 	}
 }
+
+
+void delete_even_numbers(long * list) {
+	for (int i = 0; i < index; i++) {
+		if (list[i] % 2 == 0) {
+			for (int j = i; j < index - 1; j++) {
+				list[j] = list[j + 1];
+			}
+			index--;
+		}
+	}
+}
+
 long * reverse_list(long * list) {
 	int * new_list = malloc(sizeof(long)*index);
 	for (int i = 0; i < index; i++) {
 		new_list[i] = list[index-i-1];
 	}
+	free(list);
 	return new_list;
 }
 
@@ -55,6 +69,7 @@ int main() {
 	} while (value != sentinella && index <= INIT_LIST_SIZE);
 
 	list = reverse_list(list);
+	delete_even_numbers(list);
 
 	printf("lista riordinata: \n");
 

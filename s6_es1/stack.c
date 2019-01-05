@@ -16,7 +16,7 @@ void init_stack(){
 
 void increase_size(){
     init_size+=incrase_size;
-    values = (int *)realloc(values, init_size);
+    values = (int *)realloc(values, init_size* sizeof(int));
     printf("size incrased, old size is %d, new size is %d\n",init_size-incrase_size,init_size);
 }
 

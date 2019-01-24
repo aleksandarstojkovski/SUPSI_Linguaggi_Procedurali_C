@@ -43,13 +43,13 @@ int main() {
     srand(time(NULL));
 
     for (int i=elementi_int;i<elementi_int*2;i++){
-        numbers[i]=rand() % 10 + 1;
+        numbers[i]=rand() % 100 + 1;
     }
 
     printf("\nStampo tutti gli elementi\n");
     for (int i=0;i<elementi_int*2;i++){
         if (i==0){
-            printf("Valore\tIndirizzo\n");
+            printf("\nValore\tIndirizzo\n");
         }
         printf("%d\t%p\n",numbers[i],&numbers[i]);
     }

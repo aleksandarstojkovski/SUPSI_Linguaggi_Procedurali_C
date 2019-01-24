@@ -16,6 +16,7 @@ add_subdirectory("s5_es1")
 add_subdirectory("s6_es1")
 add_subdirectory("qsort")
 add_subdirectory("es_t_1")
+add_subdirectory("es_t_2")
 
 cmake_minimum_required(VERSION 3.12)
 
